@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='update site: http://eclipse.svnkit.com/1.3.x/' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1456392109907'/>
+    <property name='eclipse.p2.force.threading' value='true'/>
+    <property name='site.checksum' value='2261042811'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='6'>
+    <artifact classifier='osgi.bundle' id='net.java.dev.jna' version='3.4.0.t20120117_1605'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://eclipse.svnkit.com/1.3.x/plugins/net.java.dev.jna_3.4.0.t20120117_1605.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.tmatesoft.sqljet' version='1.1.2.r1216_v20120523_1905'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://eclipse.svnkit.com/1.3.x/plugins/org.tmatesoft.sqljet_1.1.2.r1216_v20120523_1905.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.tmatesoft.svnkit' version='1.3.8.r9269_v20120525_1825'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://eclipse.svnkit.com/1.3.x/plugins/org.tmatesoft.svnkit_1.3.8.r9269_v20120525_1825.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.java.dev.jna' version='3.4.0.t20120117_1605'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://eclipse.svnkit.com/1.3.x/features/net.java.dev.jna_3.4.0.t20120117_1605.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.tmatesoft.svnkit' version='1.3.8.r9269_v20120525_1825'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://eclipse.svnkit.com/1.3.x/features/org.tmatesoft.svnkit_1.3.8.r9269_v20120525_1825.r9269_v20120525_1825.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.trilead.ssh2' version='1.0.0.build215_r121_v20120508_2100'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://eclipse.svnkit.com/1.3.x/plugins/com.trilead.ssh2_1.0.0.build215_r121_v20120508_2100.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>
